@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aleo', serif;
+}
+
+/***************** Header ****************/
+.header-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background: rgb(55,60,166);
+    background-image: linear-gradient(119deg, rgba(55,60,166,0.8) 0%, rgba(242,144,87,0.85) 100%),
+    /*background: rgb(55,60,166);
+    background-image: linear-gradient(135deg, rgba(55,60,166,0.7) 0%, rgba(54,217,171,0.7) 31%, rgba(56,64,59,0.99) 100%),*/
+    url("./img/web-design.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.subtitle{
+    margin: 1rem auto;
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+.btn-header{
+    box-shadow: 3px 3px #38403b;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background-color: #FF5500;
+    color: white;
+    width: 20%;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.btn-header:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/********* Primera sección (beneficios) ****************/
+.beneficio{
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+}
+
+.info-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    margin: 1.5rem 5% auto;
+}
+
+.text-info h3 span{
+    margin-right: .6rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    padding: 2px;
+    background-color: #f29057;
+    color: #38403b;
+    box-shadow: 0 0 5px 0 hsla(143, 7%, 24%, 0.61);
+}
+
+
+.img-info{
+    margin: 1rem 20%;
+    width: 60%;
+    max-width: 80%;
+}
+
+.text-info h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.desc{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.text-info{
+    margin:  1rem;
+    padding: 20px;
+    border: 3px solid #F4F6F7;
+    width: 90%;
+    height: auto;
+    /*border: 1px solid red;*/
+    /*background-color: rgba(242,144,87,1);*/
+}
+
+
+/********* Segunda sección (Clientes) *************/
+.review-container{
+    margin: 2rem auto 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    background-color: #F4F6F7;
+    place-items: center;
+}
+
+.title-client{
+    margin: 1rem 1rem auto;
+    grid-column: 1/-1;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.client{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    /*border: 1px solid green;*/
+    margin: 3rem auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.client:hover{
+    transform: scale(1.1);
+}
+
+.client-img{
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+
+.name{
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin: auto auto 1.5rem;
+}
+
+.client-review{
+    text-align: center;
+    margin: auto 30px 3rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*********** Footer **********/
+footer{
+    height: 100%;
+    background-color: #38403b;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+footer p a{
+    color: white;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-social-media a img{
+    width: 40px;
+    height: 40px;
+    margin: auto .7rem;
+}
+
+.footer-cont1 p{
+    margin: 20px auto;
+}
+
+footer p{
+    margin: 10px auto auto ;
+}
+
+/************** MEDIA QUIERIES****************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 12px;
+    }
+
+    .header-container{
+        height: 80vh;
+    }
+
+    .title{
+        margin: 0 20px 5px ;
+    }
+
+    .subtitle{
+        margin: 10px 20px;
+    }
+
+    .btn-header{
+        width: 40%;
+    }
+
+    .beneficio{
+        margin-top: 10px;
+    }
+
+    .text-info{
+        grid-column: 1/-1;
+        height: auto;
+    }
+
+    .img-info{
+        margin: 1rem 10%;
+        width: 80%;
+    }
+
+    .text-info h3 span{
+        width: 25px;
+        height: 25px;
+        font-size: 1.5rem;
+    }
+
+    .text-info h3{
+        font-size: 1.5rem;
+    }
+    
+    .client{
+        grid-column: 1/-1;
+        margin: 30px auto;
+        width: 75%;
+    }
+    
+    .contact{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-social-media a img{
+        width: 30px;
+        height: 30px;
+        margin: auto 1rem;
+    }
+    
+    .footer-cont1 p{
+        margin: 1rem auto;
+    }
+
+    footer p{
+        margin: 20px auto auto;
+    }
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 601px and up) */
+@media only screen and (min-width: 601px) {
+    html{
+        font-size: 12px;
+    }
+
+    .header-container{
+        height: 85vh;
+    }
+
+    .title{
+        margin: 0 20px 5px ;
+    }
+
+    .subtitle{
+        margin: 10px 20px;
+    }
+
+    .btn-header{
+        width: 40%;
+    }
+
+    .beneficio{
+        margin-top: 10px;
+    }
+
+    .text-info{
+        grid-column: 1/-1;
+        height: auto;
+    }
+
+    .img-info{
+        margin: 1rem 10%;
+        width: 80%;
+    }
+
+    .text-info h3 span{
+        width: 25px;
+        height: 25px;
+        font-size: 1.5rem;
+    }
+
+    .text-info h3{
+        font-size: 1.5rem;
+    }
+    
+    .client{
+        grid-column: 1/-1;
+        margin: 30px auto;
+        width: 75%;
+    }
+    
+    .contact{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container-social-media a img{
+        width: 30px;
+        height: 30px;
+        margin: auto 1rem;
+    }
+    
+    .footer-cont1 p{
+        margin: 1rem auto;
+    }
+
+    footer p{
+        margin: 20px auto auto;
+    }
+}
+
+/* Extra small devices devices landscape*/
+@media only screen and (max-width: 600px) and (max-height: 450px) {
+    html{
+        font-size: 12px;
+    }
+
+    .header-container{
+        height: 120vh;
+    }
+}
+
+/* Extra small devices devices landscape*/
+@media only screen and (min-width: 601px) and (max-height: 500px) {
+    html{
+        font-size: 12px;
+    }
+
+    .header-container{
+        height: 120vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+
+    .contact{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 16px;
+    }
+
+    .btn-header{
+        width: 25%;
+    }
+
+    .text-info{
+        grid-column: span 1;
+        height: auto;
+    }
+
+    .text-info h3 span{
+        width: 40px;
+        height: 40px;
+        font-size: 1.8rem;
+    }
+
+    .client{
+        grid-column: span 1;
+        margin: 30px auto;
+        width: 75%;
+    }
+    
+    .container-social-media a img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-cont1 p{
+        margin: 20px auto;
+    }
+    
+    footer p{
+        margin: 10px auto auto ;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html{
+        font-size: 17px;
+    }
+}
