@@ -17,10 +17,7 @@
     width: 100%;
     height: 90vh;
     background: rgb(55,60,166);
-    background-image: linear-gradient(119deg, rgba(55,60,166,0.8) 0%, rgba(242,144,87,0.85) 100%),
-    /*background: rgb(55,60,166);
-    background-image: linear-gradient(135deg, rgba(55,60,166,0.7) 0%, rgba(54,217,171,0.7) 31%, rgba(56,64,59,0.99) 100%),*/
-    url("./img/web-design.jpg");
+    background-image: linear-gradient(119deg, rgba(55,60,166,0.8) 0%, rgba(242,144,87,0.85) 100%), url("./img/web-design.jpg");
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,13 +39,12 @@
 }
 
 .btn-header{
-    box-shadow: 3px 3px #38403b;
+    box-shadow: 3px 3px hsl(143, 7%, 24%);
     border: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
     background-color: #FF5500;
     color: white;
-    width: 20%;
     height: 50px;
     border-radius: 8px;
 }
@@ -92,7 +88,6 @@
     box-shadow: 0 0 5px 0 hsla(143, 7%, 24%, 0.61);
 }
 
-
 .img-info{
     margin: 1rem 20%;
     width: 60%;
@@ -118,8 +113,6 @@
     border: 3px solid #F4F6F7;
     width: 90%;
     height: auto;
-    /*border: 1px solid red;*/
-    /*background-color: rgba(242,144,87,1);*/
 }
 
 
@@ -147,7 +140,6 @@
     align-items: center;
     flex-direction: column;
     width: 60%;
-    /*border: 1px solid green;*/
     margin: 3rem auto;
     transition: transform 0.5s ease-in-out;
 }
@@ -200,7 +192,7 @@ footer p a{
     margin: auto .7rem;
 }
 
-.footer-cont1 p{
+.footer-cont p{
     margin: 20px auto;
 }
 
@@ -229,7 +221,7 @@ footer p{
     }
 
     .btn-header{
-        width: 40%;
+        width: 45%;
     }
 
     .beneficio{
@@ -273,7 +265,7 @@ footer p{
         margin: auto 1rem;
     }
     
-    .footer-cont1 p{
+    .footer-cont p{
         margin: 1rem auto;
     }
 
@@ -316,8 +308,8 @@ footer p{
     }
 
     .img-info{
-        margin: 1rem 10%;
-        width: 80%;
+        margin: 1rem 15%;
+        width: 70%;
     }
 
     .text-info h3 span{
@@ -347,7 +339,7 @@ footer p{
         margin: auto 1rem;
     }
     
-    .footer-cont1 p{
+    .footer-cont p{
         margin: 1rem auto;
     }
 
@@ -423,7 +415,7 @@ footer p{
         height: 40px;
     }
     
-    .footer-cont1 p{
+    .footer-cont p{
         margin: 20px auto;
     }
     
